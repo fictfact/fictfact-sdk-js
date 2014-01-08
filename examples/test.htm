@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+	<script src='../src/fictfact.js'></script>
+</head>
+<body>
+	<script type="text/javascript">
+	
+	fictfact.getBooksReading(1, 'testCallBack');
+	
+	function testCallBack(data)
+	{
+		var stringIt = JSON.stringify(data);
+		
+		$('#userdata').val(stringIt);
+	}
+	
+	</script>
+	
+	<textarea id="userdata"></textarea>
+</body>
+</html>
